@@ -1,0 +1,11 @@
+<view class="outer">
+  <text>名称</text>
+  <input bindinput='bname'></input>
+  <text>价格</text>
+  <input bindinput='bprice'></input>
+  <text>描述</text>
+  <input bindinput='bdescription'></input>
+  <text>联系方式</text>
+  <input bindinput='bcontact'></input>
+  <button bindtap='tupload'>提交</button>
+</view>

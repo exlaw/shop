@@ -1,0 +1,5 @@
+<!--pages/start/start.wxml-->
+<view class="outer">
+  <button bindtap='buy'>买家</button>
+  <button bindtap='sell'>卖家</button>
+</view>

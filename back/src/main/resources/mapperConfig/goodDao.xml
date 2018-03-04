@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.goodDao">
+
+    <resultMap id="goodResultMap" type="com.example.demo.entity.good" autoMapping="true">
+        <id property="ID" column="ID"></id>
+        <result property="name" column="name"></result>
+        <result property="price" column="price"></result>
+        <result property="date" column="date"></result>
+        <collection property="tags" ofType="java.lang.String" javaType="list">
+            <result column="content"></result>
+        </collection>
+        <collection property="pictures" ofType="java.lang.String" javaType="list">
+            <result column="info"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getGood" resultMap="goodResultMap">
+        SELECT good.ID,good.name,good.price,good.date,good.description,good.contact,tag.content,picture.info
+         FROM good,picture,tag WHERE picture.goodID = good.ID AND tag.gID=good.ID
+    </select>
+
+    <insert id="addGood" parameterType="com.example.demo.entity.good"
+            useGeneratedKeys="true" keyProperty="ID">
+        INSERT INTO good VALUES (#{ID},#{name},#{price},#{date},#{description},#{contact})
+    </insert>
+
+    <delete id="deleteGood"  parameterType="java.lang.String">
+         delete from good where id =#{ID}
+    </delete>
+
+    <update id="updateGood"  parameterType="com.example.demo.entity.good">
+        update good SET name=#{name},price=#{price},date=#{date}
+        where id=#{ID}
+    </update>
+</mapper>

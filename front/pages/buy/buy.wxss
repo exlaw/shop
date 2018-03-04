@@ -1,0 +1,77 @@
+.outer{
+  margin-top: 20rpx;
+  background-color: 	#F4F4F4
+}
+.upper{
+  display:flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  background-color: #6A005F;
+}
+.button1{
+  background-color: #6A005F;
+  color: white;
+  font-size: 15px;
+}
+.searchcion{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+.search{
+  margin-top: 8rpx;
+  margin-left: 20rpx;  
+  font-size: 15px;
+  color: white;
+  width: 75%;
+}
+.choose{
+  height: 27px;
+  width: 75%;
+  border-radius:25px;
+  background-color:  				#8B4789;
+  display:flex;
+  flex-direction: row;
+  margin-right: 20rpx;  
+  margin-left: 20rpx;  
+}
+.wrap{
+  display:flex;
+  flex-direction: row;  
+  border-top: 6px solid 		#F4F4F4;
+  border-bottom: 6px solid 	#F4F4F4;
+  background-color: white;
+  height: 300rpx;
+  margin-right: 20rpx;  
+  margin-left: 20rpx;  
+}
+.right{  
+  width: 450rpx;
+  display:flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  margin-top: 20rpx;
+  margin-right: 10rpx;  
+  margin-left: 20rpx;
+}  
+.img{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.tex{
+   font-size: 16px;
+   font-family: Microsoft Yahei;
+}
+
+.tex1{
+  color: red;
+  font-size: 14px;
+}
+.tex2{
+   color: red;
+  font-size: 17px;
+}
+.tex3{
+  font-size: 15px;
+}
+

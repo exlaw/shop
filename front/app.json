@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/buy/buy",
+    
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6A005F",
+    "navigationBarTitleText": "二手市场",
+    "navigationBarTextStyle":"white"
+  }
+}

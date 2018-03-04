@@ -1,0 +1,11 @@
+/* pages/start/start.wxss */
+.outer{
+  display:flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+} 

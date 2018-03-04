@@ -1,0 +1,29 @@
+<view class="all"> 
+<view class="upper">
+  <view class="choose">
+    <icon class="searchcion" size='17' type='search' ></icon>  
+    <input class="search" placeholder=' 分类搜索您想要的商品' ></input>  
+  </view>
+  <button class="button1">搜索</button>
+</view>
+<view class="outer">
+  <view class="wrap"  wx:for="{{array}}" wx:key="unique" bindtap='toInfo'>  
+         <image src='../../sources/good1.jpg' class="img"
+         bindload='modify'></image>
+
+      <view class="right">  
+        <text class="tex">{{item.name}}</text>
+        <view class="down">
+          <view>
+            <text class="tex3">联系方式：</text>
+            <text>{{item.contact}}</text>
+          </view>
+          <view>
+          <text class="tex1">￥</text>
+          <text class="tex2">{{item.price}}</text>
+          </view>
+        </view>
+      </view>  
+  </view>
+</view>  
+</view>

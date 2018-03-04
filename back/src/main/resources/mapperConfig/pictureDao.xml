@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.pictureDao">
+    <select id="getPicture" resultType="com.example.demo.entity.picture">
+        SELECT * FROM picture
+    </select>
+    <insert id="addPicture" parameterType="com.example.demo.entity.good"
+            useGeneratedKeys="true" keyProperty="pID">
+        INSERT INTO picture VALUES (#{pID},#{info},#{goodID})
+    </insert>
+</mapper>
