@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/start/start",
-    "pages/buy/buy",
     
+    "pages/buy/buy",
+    "pages/start/start",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -11,5 +11,20 @@
     "navigationBarBackgroundColor": "#6A005F",
     "navigationBarTitleText": "二手市场",
     "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#6A005F",
+    "borderStyle": "white",
+    "list": [
+      { 
+        "pagePath": "pages/buy/buy",
+        "text": "查看市场"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "发布商品"
+      }
+    ]
   }
 }

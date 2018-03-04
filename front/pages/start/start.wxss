@@ -4,8 +4,14 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   align-items: center; /*垂直居中*/
-  justify-content: center; /*水平居中*/
 } 
+.ttt{
+  margin-bottom: 100rpx;
+  margin-left: 50rpx;
+}
+.rrr{
+  margin-right:30rpx;
+}
